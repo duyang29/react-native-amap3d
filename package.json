@@ -28,7 +28,10 @@
     "release-android": "node node_modules/react-native/local-cli/cli.js run-android --variant=release",
     "log-android": "node node_modules/react-native/local-cli/cli.js log-android",
     "reload": "adb reverse tcp:8081 tcp:8081 && adb shell input text rr",
-    "run-ios": "node node_modules/react-native/local-cli/cli.js run-ios"
+    "run-ios": "node node_modules/react-native/local-cli/cli.js run-ios",
+    "android": "react-native run-android",
+    "dev": "react-native run-android",
+    "ios": "react-native run-ios"
   },
   "peerDependencies": {
     "react-native": ">=0.47"
@@ -42,9 +45,7 @@
     "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-react": "^7.7.0",
     "flow-bin": "^0.69.0",
-    "react": "16.2.0",
-    "react-native": "0.52.3",
-    "react-navigation": "^1.5.11"
+    "scheduler": "^0.9.0"
   },
   "presets": [
     "react-native"
@@ -53,5 +54,11 @@
     "android": {
       "sourceDir": "lib/android"
     }
+  },
+  "dependencies": {
+    "react": "^16.5.2",
+    "react-native": "^0.57.3",
+    "react-native-cli": "^2.0.1",
+    "react-navigation": "^1.5.11"
   }
 }
